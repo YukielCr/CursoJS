@@ -26,3 +26,17 @@ console.log(mySet.has("Elemento5")); // false
 
 // longitud
 console.log(mySet.size);
+
+// Convertir un Set a Array
+let myarray=Array.from(mySet);
+console.log(myarray)
+
+// Convertir un Array a Set
+mySet=new Set(myarray);
+console.log(mySet)
+
+// No admte duplicados
+mySet.add("Elemento1") // No se agrega porque ya existe
+mySet.add("ElemenTo1") 
+console.log(mySet)
+

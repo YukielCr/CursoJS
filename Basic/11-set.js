@@ -20,7 +20,7 @@ console.log(mySet);
 
 console.log(mySet);
 
-// has
+// has cHECAR si existe un elemento
 console.log(mySet.has("Elemento2")); // true
 console.log(mySet.has("Elemento5")); // false
 

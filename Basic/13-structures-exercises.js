@@ -8,11 +8,12 @@ let animales=["perro", "gato", "elefante", "tigre", "leon"];
 console.log(animales);
 
 // 2. Añade dos más. Uno al principio y otro al final
-animales.unshift("jirafa");
+animales.unshift("jirafa"); // al principio
 animales.push("cebra");
 console.log(animales);
 
 // 3. Elimina el que se encuentra en tercera posición
+console.log(`Todos los animales: ${animales}`);
 animales.splice(2, 1);
 console.log(animales);
 
@@ -46,8 +47,9 @@ let myMap=new Map([
 ]);
 
 // 8. Comprueba si el mes número 5 existe en el map e imprime su valor
-if (myMap.has(5)) {
-    console.log("El mes número 5 es:", myMap.get(5));
+let mes=5;
+if(myMap.has(mes)){
+    console.log(`El mes número 5 es: ${mes}`, myMap.get(mes));
 }else{
     console.log("El mes no existe en el mapa.");
 }

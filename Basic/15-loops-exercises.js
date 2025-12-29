@@ -80,13 +80,36 @@ for(let j=2;j<10;j++){
 }
 console.log(fibo)
 
-// 10. Dado un array de números, usa un bucle para crear un nuevo array que contenga solo los números mayores a 10
-// let ar=[90,1,2,50,8,30,7]
-// let ar2=[]
-// for(let i of ar){
-//     if(i>=10){
-//         console.log(i)
-//         ar2.push(i)
-//     }
-// }
-// console.log("Nuevo mensaje: ",ar2)
+//10. Dado un array de números, usa un bucle para crear un nuevo array que contenga solo los números mayores a 10
+let ar=[90,1,2,50,8,30,7]
+let ar2=[]
+for(let i of ar){
+    if(i>=10){
+        console.log(i)
+        ar2.push(i)
+    }
+}
+console.log("Nuevo mensaje: ",ar2)
+
+
+
+// Imopresiones del codigo figonachi
+console.log("----------------------------------")
+let cade=[0, 1]
+console.log(cade)
+for(let j = 2;j<=10;j++){
+    console.log(j)
+    cade[j]=cade[j-1]+cade[j-2]
+}
+console.log(cade)
+
+
+
+//comprobacion de los aprendido
+let ca=[0,1]
+for(let k=2;k<=10;k++){
+    ca[k]=ca[k-1]+ca[k-2]
+}
+console.log(ca)
+
+

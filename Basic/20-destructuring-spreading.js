@@ -81,10 +81,15 @@ let person3={
 }
 
 
+
+
 console.log("")
 let{name:name4, job: {name:name5}}=person3
 console.log(name4)
 console.log(name5)
+
+
+
 
 // Propagación (...)
 

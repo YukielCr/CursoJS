@@ -20,3 +20,8 @@ myFunc3("Yukiel")
 
 const myFunc4=(name)=>console.log(`Hola ${name}`)
 myFunc4("Yukiel")
+
+
+// uso de la funcion flecha
+
+//const Nombre=(names)=>console.log(names)

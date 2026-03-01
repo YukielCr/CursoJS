@@ -1,0 +1,50 @@
+//Conectarse a la base de datos
+use mystore
+//Crear la colleccion
+db.createCollection("products")
+//Insertar un documento
+db.products.insert({
+    "name": "keyboard",
+})
+//Consultar los documentos
+db.products.find()
+
+//insercion de un dato nuevo
+db.products.insert({
+    "name": "laptop",
+    "price": 999.99
+})
+
+//Insertar varios documentos
+db.products.insert([
+    {
+        "name": "mouse",
+        "descripcion": "razer mouse",
+        "tags": ["computers", "gaming"],
+        "quantity": 14,
+        "created_at": new Date()
+     },
+     {
+        "name": "monitor",
+        "descripcion": "lg monitor",
+        "tags": ["computers", "gaming"],
+        "quantity": 3,
+        "created_at": new Date()
+     }
+])
+
+//Consultar los documentos
+db.products.find({name:"mouse"})
+
+
+//Consultar los documentos con un campo específico
+db.products.find({"tags":"computers"})
+db.products.find({"tags":"computers","name":"monitor"})
+
+//Consultar un documento específico
+db.products.findOne({"tags":"computers"})
+
+
+
+
+

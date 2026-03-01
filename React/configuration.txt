@@ -1,0 +1,11 @@
+npm create vite@5.2.3
+
+// Configuracion de Reack
+react-app
+react
+TypeScript
+
+// Ejecutar los comandos que nos aparescan
+cd react-app
+npm install
+npm run dev
